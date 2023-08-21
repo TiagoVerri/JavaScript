@@ -1,27 +1,48 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+    background-color: aliceblue;
 }
-
+body.dark{
+    background-color: #1f1d1d;
+}
 a {
     text-decoration: none;
 }
 
+button{
+    height: 30px;
+    width: 50px;
+    background: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
 .box {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    background: #9c9c9c;
+    margin-top: 25vh;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box.dark{
     font-size: 20px;
     color: white;
     height: 250px;
     width: 350px;
     border-radius: 10px;
-    background: #191919;
+    background: #4d4c4c;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .buttons-container {
     display: flex;
     justify-content: space-around;
@@ -30,12 +51,33 @@ a {
     width: 150px;
 }
 
-button {
-    height: 30px;
-    width: 50px;
+.btn{
     background: white;
     color: black;
     font-weight: 600;
     border-radius: 5px;
     border: 2px solid black;
+    text-align: center;
+}
+
+.btn.dark{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#btnLink{
+    justify-content: center;
+    font-size: medium;
+}
+
+.btn-white a{
+    border-radius: 5px;
+    border: 2px solid black; 
+}
+#btn-theme{
+    border-radius: 5px;
+    border: 2px solid black;  
 }

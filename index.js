@@ -7,3 +7,15 @@ let button = document.getElementById('no');
         button.style.top = Math.random() * height + "px";
         button.style.left = Math.random() * width + "px";
     })
+function changeTheme()
+{
+    let box = document.getElementsByClassName('box');
+    let buttons = document.getElementsByClassName('btn');
+    document.body.classList.toggle('dark');
+    box[0].classList.toggle('dark');
+    
+    for(i = 0; i <= buttons.length; i++)
+    {
+        buttons[i].classList.toggle('dark');
+    }
+} 

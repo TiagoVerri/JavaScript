@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido Irrecusável</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="box">
-        <p>Isso é uma proposta Irrecusável?</p>
-        <div class="buttons-container">
-            <button><a href="https://www.youtube.com/watch?v=a8c5wmeOL9o">Sim</a></button>
-            <button id="no">Não</button>
+    <div class="container">
+        <div class="content col-12 d-flex justify-content-end">
+            <button onclick="changeTheme()" id="btn-theme"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg></i></button>
+        </div>
+        <div class="box mx-auto d-flex">
+            <p class="">Isso é uma proposta Irrecusável?</p>
+            <div class="buttons-container col-12 btn-white">
+                <a href="https://www.youtube.com/watch?v=a8c5wmeOL9o" class="btn btn-light" id="btnLink">Sim</a>
+                <a class="btn btn-light" id="no">Não</a>
+            </div>
         </div>
     </div>
 </body>
